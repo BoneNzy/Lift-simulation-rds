@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Alert text when the conditions are not met */
+.alert {
+    text-align: center;
+    color: crimson;
+}
+/* Header */
+header {
+    padding: 8px;
+    background-color: rgb(134, 176, 255);
+    text-align: center;
+    color: white;
+}
+/* Input design */
+.take-inputs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color:rgb(134, 176, 255);
+}
+.label{
+    letter-spacing: 2px;
+    color: white;
+    padding: 4px;
+    text-align: center;
+}
+input[type="number"]{
+    width: 8rem;
+    padding: 5px;
+    border-radius: 6px;
+    border: 2px solid;
+    border-color: rgb(168, 78, 253);
+    outline: none;
+}
+input[type="number"]:focus {
+    border: 2px solid rgb(102, 12, 186);
+}
+/* Clicking button */
+.clk_btn{
+    width: 5rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color:darkslateblue ;
+    background-color: rgb(177, 237, 249) ;
+    border-radius: 8px;
+    border-color: rgb(88, 14, 157);
+    padding-block: .3rem;
+    margin-block: .4rem;
+}
+.clk_btn:hover{
+    background-color:cadetblue ;
+}
+.clk_btn:active{
+    transform: translateY(2px);
+}
+/* Cursor button on hover */
+.pointer {
+    cursor: pointer;
+}
+
+/* The platform or container for the  */
+.platform {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 2px solid black;
+    margin: 1rem;
+}
+.btn-container {
+    display: flex;
+    flex-direction: column;
+}
+/* up and down button design */
+.Btn {
+    width: 4.5rem;
+    letter-spacing: 2px;
+    color:rgb(18, 6, 95) ;
+    border-radius: 8px;
+    margin-block: .5rem;
+    text-transform: uppercase;
+}
+.UP {
+    padding-block: 6px;
+    background-color: rgba(197, 245, 148, 0.767);
+}
+.DOWN {
+    padding-block: 6px;
+    background-color: rgba(255, 127, 80, 0.777);
+}
+/* Button when clicked */
+.UP:active{
+    transform: translateY(2px);
+}
+.DOWN:active{
+    transform: translateY(2px);
+}
+/* Lift design */
+.lift-container {
+    display: flex;
+}
+
+.lift {
+    width: 50px;
+    height: 100px;
+    background-color: rgba(148, 108, 235, 0.556);
+
+    margin-inline: 2rem;
+}
+.lftDoor {
+    width: 50%;
+    height: 100%;
+    background-color: silver;
+    border: 2px solid;
+    float: left;
+}
+.rytDoor {
+    width: 50%;
+    height: 100%;
+    background-color: silver;
+    border: 2px solid;
+    float: right;
+}
+/* Floor number */
+.flr_num{
+    font-size: small;
+    letter-spacing: 2px;
+    font-family: cursive;
+    color: rgb(92, 14, 165);
+}

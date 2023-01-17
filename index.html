@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lift Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>LIFT SIMULATION</h1>
+    </header>
+        <div id="create-container" class="take-inputs">
+            <!--take floor inputs-->
+            <label class="label" for="no-of-flrs">
+                Number of Floors:
+                <input type="number" id="floor" name="no_of_floor">
+            </label>
+
+            <!-- take lift inputs -->
+            <label class="label" for="no-of-lfts">
+                Number of Lifts:
+                <input type="number" id="lift" name="no_of_lift">
+            </label>
+            <!-- Button to generate the floors and the lifts -->
+            <button id="btn" class="clk_btn pointer">Create</button>
+        </div>
+
+        <!-- container for the lifts and the floors -->
+    <div class="container" id="container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
