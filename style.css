@@ -66,8 +66,9 @@ input[type="number"]:focus {
 
 /* The platform or container for the  */
 .platform {
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
 
     border-bottom: 2px solid black;
@@ -101,9 +102,21 @@ input[type="number"]:focus {
 .DOWN:active{
     transform: translateY(2px);
 }
+/* Floor number */
+.flr_num{
+    position: absolute;
+    top: -10%;
+    bottom: -10;
+    left: 10px;
+    font-size: small;
+    letter-spacing: 2px;
+    font-family: cursive;
+    color: rgb(92, 14, 165);
+}
 /* Lift design */
 .lift-container {
-    display: flex;
+    width: 90%;
+    /* display: flex; */
 }
 
 .lift {
@@ -127,10 +140,8 @@ input[type="number"]:focus {
     border: 2px solid;
     float: right;
 }
-/* Floor number */
-.flr_num{
-    font-size: small;
-    letter-spacing: 2px;
-    font-family: cursive;
-    color: rgb(92, 14, 165);
-}
+
+/* .lift{
+    transition: 10s linear;
+    transform: translateY(-400px);
+} */

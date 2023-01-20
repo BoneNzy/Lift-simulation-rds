@@ -38,7 +38,8 @@ function createFloor (totalFlr) {
                 <span class="flr_num">
                     Floor ${i}
                 </span>
-            </div>`
+            </div>
+            `
         // container.appendChild(platform);
     }
     return platform;
@@ -59,5 +60,8 @@ function createLift(totalLift) {
 }
 
 document.addEventListener('click', (e) => {
-    if(e.target.classList.contains('Btn')) console.log("hello");
+    if(e.target.classList.contains('Btn')){
+
+    };
 });
+
